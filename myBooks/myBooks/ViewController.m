@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
+
+
 
 @end
 
@@ -16,8 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+    
+    
+    
+    _books = [[NSMutableArray alloc]init];
+    LibrosImprescindibles *libros = [[LibrosImprescindibles alloc]init];
+    libros.titulo = @"Libro Informáticca";
+    libros.saga = @"Educación";
+    libros.tituloOriginal = @"Java";
+    libros.autor = @"Juanma";
+    libros.ano_publiacion =@"2015";
+    libros.genero = @"Programación";
+    libros.sipnosis =@"Manual para principiantes en Java";
+      [_books addObject:libros];
+
+    
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -30,9 +48,13 @@
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    return cell;
+    LibrosImprescindibles *libro = [_books objectAtIndex:indexPath.row];
+   
+    UILabel *etiqueta = (UILabel *) [cell viewWithTag:11];
     
+    etiqueta.text = libro.titulo;
 
+    return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

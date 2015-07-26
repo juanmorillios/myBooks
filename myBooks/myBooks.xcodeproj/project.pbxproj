@@ -14,6 +14,8 @@
 		B90812851B652053005F5E4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90812841B652053005F5E4E /* Images.xcassets */; };
 		B90812881B652053005F5E4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B90812861B652053005F5E4E /* LaunchScreen.xib */; };
 		B90812941B652053005F5E4E /* myBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B90812931B652053005F5E4E /* myBooksTests.m */; };
+		B908129F1B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */ = {isa = PBXBuildFile; fileRef = B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */; };
+		B90812A01B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */ = {isa = PBXBuildFile; fileRef = B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		B908128D1B652053005F5E4E /* myBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90812921B652053005F5E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B90812931B652053005F5E4E /* myBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myBooksTests.m; sourceTree = "<group>"; };
+		B908129D1B6522AD005F5E4E /* LibrosImprescindibles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibrosImprescindibles.h; sourceTree = "<group>"; };
+		B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibrosImprescindibles.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				B908127C1B652053005F5E4E /* AppDelegate.m */,
 				B908127E1B652053005F5E4E /* ViewController.h */,
 				B908127F1B652053005F5E4E /* ViewController.m */,
+				B908129D1B6522AD005F5E4E /* LibrosImprescindibles.h */,
+				B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */,
 				B90812811B652053005F5E4E /* Main.storyboard */,
 				B90812841B652053005F5E4E /* Images.xcassets */,
 				B90812861B652053005F5E4E /* LaunchScreen.xib */,
@@ -221,6 +227,7 @@
 			files = (
 				B90812801B652053005F5E4E /* ViewController.m in Sources */,
 				B908127D1B652053005F5E4E /* AppDelegate.m in Sources */,
+				B908129F1B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */,
 				B908127A1B652053005F5E4E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90812A01B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */,
 				B90812941B652053005F5E4E /* myBooksTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
