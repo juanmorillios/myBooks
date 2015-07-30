@@ -68,4 +68,17 @@
 
 }
 
+
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    InformationOfBooksViewController *informationOfBooksViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"informationOfBooksViewController"];
+    
+    [self presentViewController:informationOfBooksViewController animated:YES completion:nil];
+    
+}
+
+
 @end

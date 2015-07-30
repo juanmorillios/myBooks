@@ -16,6 +16,8 @@
 		B90812941B652053005F5E4E /* myBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B90812931B652053005F5E4E /* myBooksTests.m */; };
 		B908129F1B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */ = {isa = PBXBuildFile; fileRef = B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */; };
 		B90812A01B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */ = {isa = PBXBuildFile; fileRef = B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */; };
+		B952AD631B6A450B00BCAF03 /* InformationOfBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B952AD621B6A450B00BCAF03 /* InformationOfBooksViewController.m */; };
+		B952AD641B6A450B00BCAF03 /* InformationOfBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B952AD621B6A450B00BCAF03 /* InformationOfBooksViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		B90812931B652053005F5E4E /* myBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myBooksTests.m; sourceTree = "<group>"; };
 		B908129D1B6522AD005F5E4E /* LibrosImprescindibles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibrosImprescindibles.h; sourceTree = "<group>"; };
 		B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibrosImprescindibles.m; sourceTree = "<group>"; };
+		B952AD611B6A450B00BCAF03 /* InformationOfBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationOfBooksViewController.h; sourceTree = "<group>"; };
+		B952AD621B6A450B00BCAF03 /* InformationOfBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationOfBooksViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				B908127C1B652053005F5E4E /* AppDelegate.m */,
 				B908127E1B652053005F5E4E /* ViewController.h */,
 				B908127F1B652053005F5E4E /* ViewController.m */,
+				B952AD611B6A450B00BCAF03 /* InformationOfBooksViewController.h */,
+				B952AD621B6A450B00BCAF03 /* InformationOfBooksViewController.m */,
 				B908129D1B6522AD005F5E4E /* LibrosImprescindibles.h */,
 				B908129E1B6522AD005F5E4E /* LibrosImprescindibles.m */,
 				B90812811B652053005F5E4E /* Main.storyboard */,
@@ -227,6 +233,7 @@
 			files = (
 				B90812801B652053005F5E4E /* ViewController.m in Sources */,
 				B908127D1B652053005F5E4E /* AppDelegate.m in Sources */,
+				B952AD631B6A450B00BCAF03 /* InformationOfBooksViewController.m in Sources */,
 				B908129F1B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */,
 				B908127A1B652053005F5E4E /* main.m in Sources */,
 			);
@@ -238,6 +245,7 @@
 			files = (
 				B90812A01B6522AD005F5E4E /* LibrosImprescindibles.m in Sources */,
 				B90812941B652053005F5E4E /* myBooksTests.m in Sources */,
+				B952AD641B6A450B00BCAF03 /* InformationOfBooksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +432,7 @@
 				B90812991B652053005F5E4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B908129A1B652053005F5E4E /* Build configuration list for PBXNativeTarget "myBooksTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +441,7 @@
 				B908129C1B652053005F5E4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
