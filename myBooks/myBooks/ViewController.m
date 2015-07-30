@@ -23,20 +23,14 @@
     [super viewDidLoad];
     
     _libros = [[NSMutableArray alloc]init];
-    LibrosImprescindibles *libros = [[LibrosImprescindibles alloc]init];
-    libros.nombre =@"Objetive C";
-    libros.autor = @"C. Frederick";
-    libros.fecha_publiacion = @"2015";
-    libros.genero = @"Programación";
-    [_libros addObject:libros];
+    LibrosImprescindibles *libro = [[LibrosImprescindibles alloc]init];
+    libro.nombre =@"Objetive C";
+    libro.autor = @"C. Frederick";
+    libro.fecha_publiacion = @"2015";
+    libro.genero = @"Programación";
+    [_libros addObject:libro];
     
-    
-    _libros = [[NSMutableArray alloc]init];
-    libros.nombre =@"Html 5 y Cs3";
-    libros.autor = @"Juanma";
-    libros.fecha_publiacion = @"2014";
-    libros.genero = @"Programación";
-    [_libros addObject:libros];
+
 
     
     }
