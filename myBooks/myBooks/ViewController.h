@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "LibrosImprescindibles.h"
-#import "InformationOfBooksViewController.h"
+//import "InformationOfBooksViewController.h"
 
 
 @interface ViewController : UITableViewController
-@property NSMutableArray *books;
+@property NSMutableArray *libros;
 
 
 @end

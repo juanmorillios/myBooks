@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "InformationOfBooksViewController.h"
+
 
 
 @interface ViewController ()
@@ -20,26 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
-    _books = [[NSMutableArray alloc]init];
+    _libros = [[NSMutableArray alloc]init];
     LibrosImprescindibles *libros = [[LibrosImprescindibles alloc]init];
     libros.nombre =@"Objetive C";
     libros.autor = @"C. Frederick";
     libros.fecha_publiacion = @"2015";
     libros.genero = @"Programación";
+    [_libros addObject:libros];
     
-    [_books addObject:libros];
     
-    
-    _books = [[NSMutableArray alloc]init];
+    _libros = [[NSMutableArray alloc]init];
     libros.nombre =@"Html 5 y Cs3";
     libros.autor = @"Juanma";
     libros.fecha_publiacion = @"2014";
     libros.genero = @"Programación";
-    
-    [_books addObject:libros];
+    [_libros addObject:libros];
 
     
     }
@@ -50,35 +47,37 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
-    UILabel *etiqueta = (UILabel *)[cell viewWithTag:11];
-    LibrosImprescindibles *libro = [_books objectAtIndex:indexPath.row];
-   
+    UITableViewCell *celda = [tableView dequeueReusableCellWithIdentifier:@"Celda"];
+    LibrosImprescindibles *libro = [_libros objectAtIndex:indexPath.row];
+    UILabel *etiqueta = (UILabel *)[celda viewWithTag:11];
     etiqueta.text = libro.nombre;
     
-    return cell;
+    return celda;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    return [_books count];
-
-
+    
+    return [_libros count];
+    
+    
 }
-
-
 
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    InformationOfBooksViewController *informationOfBooksViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"informationOfBooksViewController"];
-    
-    [self presentViewController:informationOfBooksViewController animated:YES completion:nil];
+    InformationOfBooksViewController *informationOfBooksViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"InformationOfBooksViewController"];
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:informationOfBooksViewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
     
 }
+
+
+
+
+
+
+
+
 
 
 @end

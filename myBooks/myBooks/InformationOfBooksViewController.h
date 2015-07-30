@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
-@interface InformationOfBooksViewController : UIViewController
+@interface InformationOfBooksViewController : UITableViewController
+
+
+
 
 
 

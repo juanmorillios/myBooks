@@ -14,6 +14,9 @@
 @property NSString *autor;
 @property NSString *fecha_publiacion;
 @property NSString *genero;
+@property NSString *favorito;
+@property NSNumber *rating;
+
 
 
 
