@@ -48,11 +48,7 @@
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    LibrosImprescindibles *libro = [_books objectAtIndex:indexPath.row];
-   
-    UILabel *etiqueta = (UILabel *) [cell viewWithTag:11];
-    
-    etiqueta.text = libro.titulo;
+       
 
     return cell;
 }
