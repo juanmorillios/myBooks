@@ -25,14 +25,12 @@
     
     _books = [[NSMutableArray alloc]init];
     LibrosImprescindibles *libros = [[LibrosImprescindibles alloc]init];
-    libros.titulo = @"Libro Informáticca";
-    libros.saga = @"Educación";
-    libros.tituloOriginal = @"Java";
-    libros.autor = @"Juanma";
-    libros.ano_publiacion =@"2015";
+    libros.nombre =@"Objetive C";
+    libros.autor = @"C. Frederick";
+    libros.fecha_publiacion = @"2015";
     libros.genero = @"Programación";
-    libros.sipnosis =@"Manual para principiantes en Java";
-      [_books addObject:libros];
+    
+    [_books addObject:libros];
 
     
     }
@@ -42,21 +40,21 @@
     // Dispose of any resources that can be recreated.
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-
-
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-       
-
+    UILabel *etiqueta = (UILabel *)[cell viewWithTag:11];
+    LibrosImprescindibles *libro = [_books objectAtIndex:indexPath.row];
+   
+    etiqueta.text = libro.nombre;
+    
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 5;
+    return [_books count];
 
 
 }

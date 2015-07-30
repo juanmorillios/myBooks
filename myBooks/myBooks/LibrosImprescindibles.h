@@ -10,13 +10,12 @@
 
 @interface LibrosImprescindibles : NSObject
 
-@property NSString *titulo;
-@property NSString *saga;
-@property NSString *tituloOriginal;
+@property NSString *nombre;
 @property NSString *autor;
-@property NSString *ano_publiacion;
+@property NSString *fecha_publiacion;
 @property NSString *genero;
-@property NSString *sipnosis;
+
+
 
 
 
