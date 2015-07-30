@@ -31,6 +31,15 @@
     libros.genero = @"Programación";
     
     [_books addObject:libros];
+    
+    
+    _books = [[NSMutableArray alloc]init];
+    libros.nombre =@"Html 5 y Cs3";
+    libros.autor = @"Juanma";
+    libros.fecha_publiacion = @"2014";
+    libros.genero = @"Programación";
+    
+    [_books addObject:libros];
 
     
     }
