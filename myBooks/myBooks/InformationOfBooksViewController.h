@@ -10,12 +10,17 @@
 
 @interface InformationOfBooksViewController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *lblNameLibro;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *lblAutorBook;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *lblFechaBook;
 
+@property (weak, nonatomic) IBOutlet UILabel *lblGeneroBook;
 
+@property (weak, nonatomic) IBOutlet UITextView *txtViewArgumento;
 
 
 

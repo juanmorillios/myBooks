@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "InformationOfBooksViewController.h"
+#import "LibrosImprescindibles.h"
 
 
 
@@ -29,6 +30,18 @@
     libro.fecha_publiacion = @"2015";
     libro.genero = @"Programación";
     [_libros addObject:libro];
+    
+    
+    _libros = [[NSMutableArray alloc]init];
+    libro.nombre =@"Html 5";
+    libro.autor = @"C. Frederick";
+    libro.fecha_publiacion = @"2015";
+    libro.genero = @"Programación";
+    [_libros addObject:libro];
+    
+ 
+    
+    
     
 
 
