@@ -17,7 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    _lblNameLibro.text = _libroSeleccionado.nombre;
+    _lblAutorBook.text = _libroSeleccionado.autor;
+    _lblFechaBook.text = _libroSeleccionado.fecha_publiacion;
+    _lblGeneroBook.text = _libroSeleccionado.genero;
+    
+    
+
+
+
 }
 
 
