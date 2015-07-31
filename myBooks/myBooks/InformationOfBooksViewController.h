@@ -21,7 +21,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblGeneroBook;
 
 @property (weak, nonatomic) IBOutlet UITextView *txtViewArgumento;
+@property LibrosImprescindibles *libroSeleccionado;
 
+
+
+- (IBAction)compartirBtn:(id)sender;
+
+
+- (IBAction)atrasBtn:(id)sender;
 
 
 @end

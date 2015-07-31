@@ -39,7 +39,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cpb-M6-7s3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198" y="-226"/>
+            <point key="canvasLocation" x="242" y="-1502"/>
         </scene>
         <!--Información del libro-->
         <scene sceneID="ayr-CY-Jbp">
@@ -97,10 +97,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Información del libro" id="HTQ-og-HCJ">
-                        <barButtonItem key="leftBarButtonItem" title="Atras" id="v64-bC-fo4"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="LYH-i1-KJ6"/>
+                        <barButtonItem key="leftBarButtonItem" title="Atras" id="v64-bC-fo4">
+                            <connections>
+                                <action selector="atrasBtn:" destination="PZc-YX-y8p" id="WhV-Sg-bie"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="LYH-i1-KJ6">
+                            <connections>
+                                <action selector="compartirBtn:" destination="PZc-YX-y8p" id="vw4-Ms-LPE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="compartirBtn" destination="LYH-i1-KJ6" id="KQR-3r-wHJ"/>
                         <outlet property="lblAutorBook" destination="XcA-nQ-yLF" id="yZw-Sl-Q4Q"/>
                         <outlet property="lblFechaBook" destination="vq3-Xq-gBB" id="iH5-vt-9xt"/>
                         <outlet property="lblGeneroBook" destination="vXb-g8-vHL" id="RdI-E0-zw4"/>
@@ -110,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wup-X5-XMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198" y="448"/>
+            <point key="canvasLocation" x="575" y="-720"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="23b-rA-wcW">
@@ -128,7 +137,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A22-IF-RhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="-226"/>
+            <point key="canvasLocation" x="-470" y="-1502"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="img-E0-Ict">
@@ -146,7 +155,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9u-JG-2Yq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491" y="448"/>
+            <point key="canvasLocation" x="-465" y="-828"/>
         </scene>
     </scenes>
 </document>

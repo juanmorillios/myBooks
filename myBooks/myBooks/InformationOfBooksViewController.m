@@ -7,6 +7,7 @@
 //
 
 #import "InformationOfBooksViewController.h"
+#import "LibrosImprescindibles.h"
 
 @interface InformationOfBooksViewController ()
 
@@ -36,4 +37,14 @@
 }
 */
 
+- (IBAction)compartirBtn:(id)sender {
+    
+    NSLog(@"Aqui va código");
+}
+
+- (IBAction)atrasBtn:(id)sender {
+
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

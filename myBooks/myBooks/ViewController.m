@@ -70,10 +70,13 @@
     
 }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     InformationOfBooksViewController *informationOfBooksViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"InformationOfBooksViewController"];
+    
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:informationOfBooksViewController];
+    informationOfBooksViewController.libroSeleccionado = [  _libros objectAtIndex:indexPath.row];
     [self presentViewController:navigationController animated:YES completion:nil];
     
 }
