@@ -32,7 +32,7 @@
     [_libros addObject:libro];
     
     
-    _libros = [[NSMutableArray alloc]init];
+    libro = [[LibrosImprescindibles alloc]init];
     libro.nombre =@"Html 5";
     libro.autor = @"C. Frederick";
     libro.fecha_publiacion = @"2015";
@@ -40,12 +40,6 @@
     [_libros addObject:libro];
     
  
-    
-    
-    
-
-
-    
     }
 
 - (void)didReceiveMemoryWarning {
@@ -56,7 +50,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *celda = [tableView dequeueReusableCellWithIdentifier:@"Celda"];
     LibrosImprescindibles *libro = [_libros objectAtIndex:indexPath.row];
-    UILabel *etiqueta = (UILabel *)[celda viewWithTag:11];
+    UILabel *etiqueta = (UILabel *)[celda viewWithTag:42];
     etiqueta.text = libro.nombre;
     
     return celda;

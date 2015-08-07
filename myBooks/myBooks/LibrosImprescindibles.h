@@ -16,7 +16,7 @@
 @property NSString *genero;
 @property NSString *favorito;
 @property NSNumber *rating;
-
+@property NSString *comentario;
 
 
 

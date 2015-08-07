@@ -24,9 +24,6 @@
     _lblGeneroBook.text = _libroSeleccionado.genero;
     
     
-
-
-
 }
 
 
