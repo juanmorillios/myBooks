@@ -18,10 +18,4 @@
 @property NSNumber *rating;
 @property NSString *comentario;
 
-
-
-
-
-
-
 @end
